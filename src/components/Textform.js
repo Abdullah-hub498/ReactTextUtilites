@@ -32,7 +32,7 @@ export default function Textform(props) {
              {/* <button type="button" className="btn btn-primary mx-2" onClick={handleCapitalCase}>Capital Case</button> */}
              <div className="container my-3"  style={{color: props.mode==='light'?'black':'white'}}>
                  <h1>Your Text Summery</h1>
-                 <p>{text.split(" ").length} words and {text.length} characters</p>
+                 <p>{text.split(" ").length-1} words and {text.length} characters</p>
                  <p>{0.008*text.split(" ").length} Mintues required to read</p>
                  <h2>Preview</h2>
                  <p>{text.length>0?text:"Enter Text To Preview"}</p>
